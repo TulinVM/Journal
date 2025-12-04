@@ -29,7 +29,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
                  '82.202.142.110',
-                 '192.168.1.52',
                  ]
 
 
@@ -154,18 +153,10 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 ACCOUNT_ADAPTER = 'defects.adapter.CustomAccountAdapter'
-#ACCOUNT_AUTHENTICATION_METHOD = 'username'
-ACCOUNT_LOGIN_METHODS = {'username'}
-#ACCOUNT_USERNAME_REQUIRED = True
-#ACCOUNT_EMAIL_REQUIRED = False
-ACCOUNT_SIGNUP_FIELDS = ['email', 'username*', 'password1*', 'password2*']
+ACCOUNT_AUTHENTICATION_METHOD = 'username'
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_EMAIL_REQUIRED = False
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-#WARNINGS:
-#?: settings.ACCOUNT_AUTHENTICATION_METHOD is deprecated, use: #settings.ACCOUNT_LOGIN_METHODS = {'username'}
-#?: settings.ACCOUNT_EMAIL_REQUIRED is deprecated, use: #settings.ACCOUNT_SIGNUP_FIELDS = ['email', 'username*', 'password1*', 'password2*']
-#?: settings.ACCOUNT_USERNAME_REQUIRED is deprecated, use: #settings.ACCOUNT_SIGNUP_FIELDS = ['email', 'username*', 'password1*', 'password2*']
-
 
 ACCOUNT_TEMPLATES = {
     'login': 'account/login.html',
