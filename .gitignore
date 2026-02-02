@@ -6,4 +6,8 @@ static/js/popup_old.js
 templates/include/pagination_old.html
 .env
 venv
+<<<<<<< HEAD
 db.sqlite3
+=======
+db.sqlite3
+>>>>>>> cd452c2 (Edit PR)
