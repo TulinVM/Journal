@@ -6,3 +6,4 @@ static/js/popup_old.js
 templates/include/pagination_old.html
 .env
 venv
+db.sqlite3
