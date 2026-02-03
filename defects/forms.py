@@ -46,13 +46,13 @@ class JournalFormEvent(forms.ModelForm):
             'fault',
             'author_def',
             #'events',
-            #'date_events',
-            # 'author_events',
+            'date_events',
+            'author_events',
         ]      
 
         widgets = {
            # 'date_def': forms.DateInput(attrs={'type': 'date'}),
-           # 'date_events': forms.DateInput(attrs={'type': 'date'}),
+           'date_events': forms.DateInput(attrs={'type': 'date'}),
         }
 
 class JournalFormEventTwo(forms.ModelForm):
