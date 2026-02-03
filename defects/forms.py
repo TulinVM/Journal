@@ -45,7 +45,7 @@ class JournalFormEvent(forms.ModelForm):
             'channel_purpose',
             'fault',
             'author_def',
-            #'events',
+            'events',
             'date_events',
             'author_events',
         ]      
