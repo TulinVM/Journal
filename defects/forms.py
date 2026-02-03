@@ -18,12 +18,13 @@ class JournalForm(forms.ModelForm):
             'number_cannel_mkc',
             'channel_purpose',
             'fault',
-            'author_def'          
+            'author_def',
+            #'date_events'         
         ]      
 
         widgets = {
             'date_def': forms.DateInput(attrs={'type': 'date'}),
-            'date_events': forms.DateInput(attrs={'type': 'date'}),
+            #'date_events': forms.DateInput(attrs={'type': 'date'}),
         }
 
 
@@ -44,14 +45,14 @@ class JournalFormEvent(forms.ModelForm):
             'channel_purpose',
             'fault',
             'author_def',
-            'events',
-            'date_events',
+            #'events',
+            #'date_events',
             # 'author_events',
         ]      
 
         widgets = {
-            'date_def': forms.DateInput(attrs={'type': 'date'}),
-            'date_events': forms.DateInput(attrs={'type': 'date'}),
+           # 'date_def': forms.DateInput(attrs={'type': 'date'}),
+           # 'date_events': forms.DateInput(attrs={'type': 'date'}),
         }
 
 class JournalFormEventTwo(forms.ModelForm):
@@ -80,7 +81,7 @@ class JournalFormEventTwo(forms.ModelForm):
         ]      
 
         widgets = {
-            'date_def': forms.DateInput(attrs={'type': 'date'}),
-            'date_events': forms.DateInput(attrs={'type': 'date'}),
+           # 'date_def': forms.DateInput(attrs={'type': 'date'}),
+           # 'date_events': forms.DateInput(attrs={'type': 'date'}),
             'date_events_two': forms.DateInput(attrs={'type': 'date'}),
         }
